@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="flex justify-center bg-gray-500">
+    <div class="rounded-lg md:w-[380px] sm:w-[380px] w-[280] h-[480px] mt-36 bg-slate-100 shadow-2xl shadow-slate-100/100">
+      <div class="flex justify-center">
+        <input class=" text-end w-4/5 mt-4 text-4xl font-bold px-3" id="display" readonly/>
+      </div>
+      <div class="flex justify-center py-5">
+        <div class="grid grid-cols-4 gap-10 px-8">
+            <button class="rounded-full w-10 h-10 font-sans text-xl bg-gray-300 text-black opacity-85 shadow-xl shadow-gray-300/100" onclick="clearDisplay('AC')">AC</button>
+            <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100">C</button>
+            <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100">%</button>
+            <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('/')">/</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('1')">1</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('2')">2</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('3')">3</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('*')">X</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('4')">4</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('5')">5</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('6')">6</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('-')">-</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('7')">7</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('8')">8</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('9')">9</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('+')">+</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" id="check">-+</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="appendToDisplay('0')">0</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" id="check">.</button>
+          <button class="rounded-full w-10 h-10 font-sans text-2xl bg-gray-300 text-black opacity-85 shadow-2xl shadow-gray-300/100" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="src/main.js"></script>
+</html>
